@@ -9,7 +9,10 @@ async function bootstrap() {
         options: {
             client: {
                 brokers: ['localhost:29092'],
-            }
+            },
+            consumer: {
+                groupId: 'notification-consumer',
+            },
         }
     });
 
